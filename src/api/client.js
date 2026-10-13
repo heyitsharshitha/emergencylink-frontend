@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://emergencylink-backend.onrender.com';
 export const TOKEN_KEY = 'el_token';
 
 const client = axios.create({ baseURL: API_BASE_URL, timeout: 20000 });

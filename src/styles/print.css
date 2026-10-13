@@ -1,0 +1,12 @@
+.print-only { display: none; }
+@media print {
+  @page { margin: 14mm; }
+  body { background: #fff !important; color: #000; font-size: 11pt; }
+  .utility, .header, .sidebar, .footer, .no-print, .toasts, .tour, .skip-link, .breadcrumbs, .crumbs, .scrim, .btn, .next-action { display: none !important; }
+  .print-only { display: block !important; }
+  .main { padding: 0 !important; } .main-in { max-width: 100% !important; }
+  .card { box-shadow: none !important; border: 1px solid #999 !important; break-inside: avoid; }
+  .print-watermark { display: block !important; text-align: center; border: 2px dashed #555; padding: 8px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 14px; }
+  a { color: #000 !important; text-decoration: none !important; }
+}
+.print-watermark { display: none; }
